@@ -4,9 +4,11 @@
 
 .factContent__title{
     color: lightsalmon;
+    margin-top: 4rem;
 }
 
 .factContent__text{
     font-weight: 300;
     word-wrap: break-word;
+    padding: 0 3rem;
 }

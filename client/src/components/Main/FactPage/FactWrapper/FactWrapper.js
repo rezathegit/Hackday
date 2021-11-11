@@ -7,8 +7,8 @@ function FactWrapper(props) {
     return (
         <div>
             <h1></h1>
-            <FactContent factData={factData} />
             <ImageContent imageData={imageData}/>
+            <FactContent factData={factData} />
         </div>
     )
 }

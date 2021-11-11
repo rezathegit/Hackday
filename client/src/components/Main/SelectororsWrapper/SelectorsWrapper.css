@@ -1,0 +1,13 @@
+.selector__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+
+.selector__link {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}

@@ -1,0 +1,8 @@
+.flushbtn {
+    height: 8rem;
+}
+
+.onemore__button {
+    display: flex;
+    justify-content: end;
+}

@@ -4,7 +4,6 @@ import './SelectorBtn.css'
 function SelectorBtn({name}) {
     return (
         <div>
-            <button className="selector__button">{name}</button>
         </div>
     )
 }
