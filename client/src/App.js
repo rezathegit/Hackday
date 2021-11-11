@@ -1,29 +1,31 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function App() {
 
-  const [backendData, setBackendData] = useState([{}])
+  const [backendData, setBackendData] = useState('')
 
   useEffect(() => {
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
+    axios({
+      method: "GET",
+      url: "http://localhost:5000/api",
+    }).then(
+      res => {
+        setBackendData(res.data)
       }
     )
   }, [])
 
   return (
     <div>
-
-      {(typeof backendData.users === 'undefined') ? (
+      <p>{backendData}</p>
+      {/* {(typeof backendData === 'undefined') ? (
         <p>Loading...</p>
       ): (
-        backendData.users.map((user, i) => (
+        backendData.map((user, i) => (
           <p key={i}>{user}</p>
         ))
-      )}
+      )} */}
 
     </div>
   )
