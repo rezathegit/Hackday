@@ -3,12 +3,15 @@ import FactPage from './FactPage/FactPage'
 import WikiPage from './WikiPage/WikiPage'
 import VideoPage from './VideoPage/VideoPage'
 import ActionsWrapper from './ActionsWrapper/ActionsWrapper'
+import SelectorsWrapper from './SelectororsWrapper/SelectorsWrapper'
 
-function Main() {
+function Main(props) {
+    const { factData } = props;
     return (
         <div>
             <h1>Main</h1>
-            <FactPage /><ActionsWrapper />
+            <SelectorsWrapper />
+            <FactPage factData={factData} /><ActionsWrapper />
             <WikiPage /><ActionsWrapper />
             <VideoPage /><ActionsWrapper />
         </div>

@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 
-  const [FactData, setFactData] = useState('')
+  const [factData, setFactData] = useState('')
 
   useEffect(() => {
     axios({
@@ -22,12 +22,12 @@ function App() {
   return (
     <div>
       <Header />
-      <Main />
-      <p>{FactData}</p>
-      {/* {(typeof FactData === 'undefined') ? (
+      <Main factData={factData}/>
+      <p>{factData}</p>
+      {/* {(typeof factData === 'undefined') ? (
         <p>Loading...</p>
       ): (
-        FactData.map((user, i) => (
+        factData.map((user, i) => (
           <p key={i}>{user}</p>
         ))
       )} */}

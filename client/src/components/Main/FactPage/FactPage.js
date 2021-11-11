@@ -1,11 +1,12 @@
 import React from 'react'
 import FactWrapper from './FactWrapper/FactWrapper'
 
-function FactPage() {
+function FactPage(props) {
+    const { factData } = props;
     return (
         <div>
             <h1>FactPage</h1>
-            <FactWrapper />
+            <FactWrapper factData={factData} />
         </div>
     )
 }
