@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
-  const [backendData, setBackendData] = useState('')
+  const [FactData, setFactData] = useState('')
 
   useEffect(() => {
     axios({
@@ -11,22 +14,24 @@ function App() {
       url: "http://localhost:5000/api",
     }).then(
       res => {
-        setBackendData(res.data)
+        setFactData(res.data)
       }
     )
   }, [])
 
   return (
     <div>
-      <p>{backendData}</p>
-      {/* {(typeof backendData === 'undefined') ? (
+      <Header />
+      <Main />
+      <p>{FactData}</p>
+      {/* {(typeof FactData === 'undefined') ? (
         <p>Loading...</p>
       ): (
-        backendData.map((user, i) => (
+        FactData.map((user, i) => (
           <p key={i}>{user}</p>
         ))
       )} */}
-
+      <Footer />
     </div>
   )
 }
