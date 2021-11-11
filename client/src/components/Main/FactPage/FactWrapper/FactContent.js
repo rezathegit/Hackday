@@ -1,9 +1,11 @@
 import React from 'react'
 
-function FactContent() {
+function FactContent(props) {
+    const { factData } = props; 
     return (
         <div>
             <h1>FactContent</h1>
+            <p>{factData}</p>
         </div>
     )
 }

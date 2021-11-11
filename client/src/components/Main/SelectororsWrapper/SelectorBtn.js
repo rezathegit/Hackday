@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SelectorBtn() {
+function SelectorBtn({name}) {
     return (
         <div>
-            <button>PePoBoom</button>
+            <button>{name}</button>
         </div>
     )
 }

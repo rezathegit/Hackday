@@ -1,11 +1,12 @@
 import React from 'react'
 import OneMoreBtn from './OneMoreBtn'
 import FlushBtn from './FlushBtn'
+import { Link } from 'react-router-dom';
 
 function ActionsWrapper() {
     return (
         <div>
-            <FlushBtn />
+            <Link to='/'><FlushBtn /></Link>
             <OneMoreBtn />
         </div>
     )
