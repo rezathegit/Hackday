@@ -1,9 +1,10 @@
 import React from 'react'
+import './SelectorBtn.css'
 
 function SelectorBtn({name}) {
     return (
         <div>
-            <button>{name}</button>
+            <button className="selector__button">{name}</button>
         </div>
     )
 }

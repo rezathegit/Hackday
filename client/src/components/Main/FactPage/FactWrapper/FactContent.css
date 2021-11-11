@@ -1,0 +1,12 @@
+.factContent{
+    
+}
+
+.factContent__title{
+    color: lightsalmon;
+}
+
+.factContent__text{
+    font-weight: 300;
+    word-wrap: break-word;
+}

@@ -37,9 +37,7 @@ function App() {
     <div>
       <Header />
       <Main factData={factData} imageData={imageData}/>
-      <p>{factData}</p>
-      <p>{imageData.artist}</p>
-      <img src={imageData.url} />
+      
       {/* {(typeof factData === 'undefined') ? (
         <p>Loading...</p>
       ): (

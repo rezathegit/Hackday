@@ -3,12 +3,12 @@ import FactContent from './FactContent'
 import ImageContent from './ImageContent'
 
 function FactWrapper(props) {
-    const { factData } = props; 
+    const { factData, imageData } = props; 
     return (
         <div>
-            <h1>FactWrapper</h1>
+            <h1></h1>
             <FactContent factData={factData} />
-            <ImageContent />
+            <ImageContent imageData={imageData}/>
         </div>
     )
 }

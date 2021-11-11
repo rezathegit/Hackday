@@ -4,19 +4,20 @@ import FactPage from './FactPage/FactPage'
 import WikiPage from './WikiPage/WikiPage'
 import VideoPage from './VideoPage/VideoPage'
 import SelectorsWrapper from './SelectororsWrapper/SelectorsWrapper'
+import './Main.css';
 
 function Main(props) {
-    const { factData } = props;
+    const { factData, imageData } = props;
     return (
-        <div>
+        <div className="main">
             
-            <h1>Main</h1>
+            <h1></h1>
             <BrowserRouter>
             <Routes>
 
             <Route path='/' element={<SelectorsWrapper />} exact />
 
-            <Route path='/FactPage' element={<FactPage factData={factData}/>} />
+            <Route path='/FactPage' element={<FactPage factData={factData} imageData={imageData}/>} />
             <Route path='/WikiPage' element={<WikiPage />} />
             <Route path='/VideoPage' element={<VideoPage />} />
 
